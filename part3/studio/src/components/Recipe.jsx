@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://www.kitchensanctuary.com/easy-chicken-curry/";
+   let authorPhoto = "https://www.kitchensanctuary.com/wp-content/uploads/2020/04/Chris-Nicky-Head-Shots-6-500x500.webp";
+   let authorName = "Nicky Corbishley";
 
    return (
       <div>
-         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "" style={{width: "200px", objectFit: "contain", borderRadius: "50%", }} />
          <div>
             <h3>{authorName}</h3>
             <a href={authorLink}></a> 
@@ -16,8 +16,13 @@ const RecipeAuthor = () => {
    );
 }
 
+
+
+
+
+
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["Chicken Breast", "Curry Powder", "Cumin", "Tomato Paste", "Garlic"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -36,8 +41,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>"Easy Chicken Curry"</h1>
+            <p>"A quick and simple mild chicken curry recipe with bags of flavour. Ready in 30 minutes."</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,7 +54,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://www.kitchensanctuary.com/wp-content/uploads/2020/08/Easy-Chicken-Curry-square-FS-117-276x276.jpg" alt="" className="imageUpdates"/>
    );
 }
 
