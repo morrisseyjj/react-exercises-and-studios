@@ -1,4 +1,5 @@
 import styles from "./Ingredients.module.css";
+export default RecipeIngredients;
 
 const RecipeIngredients = () => {
     let ingredients = ["olive oil", "onion", "garlic", "curry powder", "paprika"];
@@ -16,4 +17,3 @@ const RecipeIngredients = () => {
     );  
 };
 
-export default RecipeIngredients;
